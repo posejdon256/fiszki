@@ -15,6 +15,7 @@ type Query {
     words(_id: Int): [Word],
   }
 type Mutation{
-    insertWord(input: WordInput!): String,
+    insertWord(input: WordInput!):Boolean,
+    removeWord(id: String!):Boolean
 }
 `];
